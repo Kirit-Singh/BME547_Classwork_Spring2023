@@ -16,14 +16,17 @@ The datasbase will contain:
     - A-
     - B+
     - B-
+    - AB+
+    - AB-
     
 ## Future additions
 1. Patient address
 2. Patient Gender
 3. Medical Record Number
 
-The variable name is "x_variable'.
-...
-def_function(x)
-print(x)
-....
+The variable name is "x_variable'.  
+
+...  
+def_function(x)    
+print(x)  
+...  
