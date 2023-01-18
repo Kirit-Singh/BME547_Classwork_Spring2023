@@ -15,6 +15,7 @@ The datasbase will contain:
     - A+
     - A-
     - B+
+    - B-
     
 ## Future additions
 1. Patient address
