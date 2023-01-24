@@ -8,6 +8,7 @@ def interface():
                 print("Options:")
                 print("1 - HDL")
                 print("2 - LDL")
+                print("3 - Total Cholesterol")
                 print("9 - Quit")
                 choice = input("Select an option:")
                 if choice == "9":
@@ -16,6 +17,8 @@ def interface():
                         HDL_driver()
                 elif choice == "2":
                         LDL_driver()
+                elif choice == "3":
+                        Total_driver()       
         print("Program ending")
 
 def HDL_driver():
