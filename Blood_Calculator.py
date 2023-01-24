@@ -69,4 +69,9 @@ def LDL_output(LDL_value, LDL_analy):
     print("The LDL result of {} is considered {}".format(LDL_value, LDL_analy))
     return
 
+def Total_driver():
+        Total_in = Total_input()
+        Total_analy = Total_analysis(Total_in)
+        Total_output(Total_in, Total_analy)
+
 interface()
