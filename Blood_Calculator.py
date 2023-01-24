@@ -74,4 +74,9 @@ def Total_driver():
         Total_analy = Total_analysis(Total_in)
         Total_output(Total_in, Total_analy)
 
+def Total_input():
+        Total_value = input("Enter the Total Cholesterol result:")
+        Total_value = int(Total_value)
+        return Total_value
+
 interface()
