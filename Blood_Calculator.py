@@ -87,5 +87,9 @@ def Total_analysis(Total_int):
         else:
                 answer = "Normal"
         return answer
+        
+def Total_output(Total_value, Total_analy):
+    print("The Total Cholesterol result of {} is considered {}".format(Total_value, Total_analy))
+    return
 
 interface()
