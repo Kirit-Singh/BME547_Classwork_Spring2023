@@ -1,3 +1,7 @@
+print("This is the blood_calculator.py file")
+print("Python think this is called {}".format(__name__))
+
+
 def interface():
     print("Blood calculator")
     keep_running = True
@@ -79,5 +83,5 @@ def total_analysis(total_int):
 
     
     
-
-interface()
+if __name__ == "__main__":
+        interface()
