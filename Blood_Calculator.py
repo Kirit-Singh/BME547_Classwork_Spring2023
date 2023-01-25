@@ -1,5 +1,5 @@
 print("This is the blood_calculator.py file")
-print("Python think this is called {}".format(__name__))
+print("Python thinks this is called {}".format(__name__))
 
 
 def interface():
