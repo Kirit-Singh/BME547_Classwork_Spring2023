@@ -81,7 +81,7 @@ def total_analysis(total_int):
         answer = "Normal"
     return answer
 
-    
-    
+
+
 if __name__ == "__main__":
         interface()
