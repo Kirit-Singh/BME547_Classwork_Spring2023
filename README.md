@@ -8,7 +8,9 @@ This repository contains code for running a Patient Health Database.
 This is written in Python
 
 ## Specifications
-The datasbase will contain:
+Will be able to add patient name, patient MRN and patient ID to database.
+
+The database will contain:
 * Patient Name
 * Patient Age
 * Patient Bloodtype
