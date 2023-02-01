@@ -7,12 +7,16 @@ Author: Kirit Singh
 This repository contains code for running a Patient Health Database.  
 This is written in Python
 
-## Specifications
-Will be able to add patient name, patient MRN and patient ID to database.
 
+## Specifications
 The database will contain:
-* Patient Name
-* Patient Age
+* Patient Name, string
+* Patient Medical Record Number, integer
+* Patient Age, integer
+* Patient Test Results, List of Lists
+  - Each test is represented by [test_name, test_value]
+    where test_name is a string and test_value is an integer/float
+
 * Patient Bloodtype
     - A+
     - A-
