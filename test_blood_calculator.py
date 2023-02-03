@@ -1,6 +1,8 @@
-# 3A's - Arrange, Act, Assert
+import pytest
 
-def test_HDL_analysis():
+# 3A's - Arrange, Act, Assert
+@pytest.mark.parametrize("HDL_input, expected")
+def test_HDL_analysis(HDL_input, expected):
 	from blood_calculator import test_HDL_analysis
 	# Arrange
     HDL_input = 65
