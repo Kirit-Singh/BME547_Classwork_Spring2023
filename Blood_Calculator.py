@@ -77,6 +77,11 @@ def total_analysis(total_int):
         answer = "Normal"
     return answer
 
+def check_fever(input_list):
+    for temperature in input_list:
+        if temperature > 100.5:
+            return True 
+    return False
 
 if __name__ == "__main__":
         interface()
