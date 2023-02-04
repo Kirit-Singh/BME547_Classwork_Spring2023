@@ -1,26 +1,15 @@
-def test_HDL_analysis():
-    from Blood_Calculator import HDL_analysis
-    # Arrange
-    HDL_input = 65
-    # Act
-    answer = HDL_analysis(HDL_input)
-    # Assert
-    assert answer == "Normal"
+import pytest
 
-def test_HDL_analysis_Borderline_Low():
+@pytest.mark.parametrize("HDL_input, expected",
+    [(65, "Normal"),
+    (45, "Borderline Low"),
+    (20, "Low")
+    ])
+def test_HDL_analysis(HDL_input, expected):
     from Blood_Calculator import HDL_analysis
     # Arrange
-    HDL_input = 50
     # Act
     answer = HDL_analysis(HDL_input)
     # Assert
-    assert answer == "Borderline Low"
+    assert answer == expected
 
-def test_HDL_analysis_Low():
-    from Blood_Calculator import HDL_analysis
-    # Arrange
-    HDL_input = 30
-    # Act
-    answer = HDL_analysis(HDL_input)
-    # Assert
-    assert answer == "Low"
