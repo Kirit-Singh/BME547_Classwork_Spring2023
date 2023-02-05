@@ -3,13 +3,13 @@ def xy_input():
     y1 = 1
     x2 = 2
     y2 = 2
-    first_coordinates = x1, y1
-    second_coordinates = x2, y2
+    first_coordinates = (x1, y1)
+    second_coordinates = (x2, y2)
     return first_coordinates, second_coordinates
 
 def slope_calculator(first_coordinates, second_coordinates):
-    x1, y1 = first_coordinates
-    x2, y2 = second_coordinates
+    (x1, y1) = first_coordinates
+    (x2, y2) = second_coordinates
     slope = (y2-y1)/(x2-x1)
     return x1, y1, slope
 
