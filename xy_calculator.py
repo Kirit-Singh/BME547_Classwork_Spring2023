@@ -1,8 +1,8 @@
 def xy_input():
-    x1 = float(input("Enter the value of x1: "))
-    y1 = float(input("Enter the value of y1: "))
-    x2 = float(input("Enter the value of x2: "))
-    y2 = float(input("Enter the value of y2: "))
+    x1 = 1
+    y1 = 1
+    x2 = 2
+    y2 = 2
     first_coordinates = x1, y1
     second_coordinates = x2, y2
     return first_coordinates, second_coordinates
@@ -19,6 +19,6 @@ def xy_analysis(x1, y1, slope, x3):
 
 first_coordinates, second_coordinates = xy_input()
 x1, y1, slope = slope_calculator(first_coordinates, second_coordinates)
-x3 = float(input("Enter the value of x3: "))
+x3 = 4
 result = xy_analysis(x1, y1, slope, x3)
-print("The value of y3 is:", result)
+print("y3 =", result)
