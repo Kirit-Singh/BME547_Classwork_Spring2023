@@ -6,6 +6,7 @@ def test_slope_calculator():
     expected = (4, 4, 1)
     assert answer == expected
 
+
 def test_xy_analysis():
     from xy_calculator import xy_analysis
     x1 = 2
@@ -16,6 +17,7 @@ def test_xy_analysis():
     expected = 6
     assert answer == expected
 
+
 def test_line_checker():
     from xy_calculator import line_checker
     first_coordinates = (4, 4) 
@@ -24,6 +26,7 @@ def test_line_checker():
     answer = line_checker(first_coordinates, second_coordinates, third_coordinates)
     expected = True
     assert answer == expected
+
 
 def test_line_checker():
     from xy_calculator import line_checker
