@@ -7,14 +7,14 @@ def test_slope_calculator():
     assert answer == expected
 
 def test_xy_analysis():
-	from xy_calculator import xy_analysis
-	x1 = 2
-	y1 = 2
-	slope = 1
-	x3 = 6
-	answer = xy_analysis(x1, y1, slope, x3)
-	expected = 6
-	assert answer == expected
+    from xy_calculator import xy_analysis
+    x1 = 2
+    y1 = 2
+    slope = 1
+    x3 = 6
+    answer = xy_analysis(x1, y1, slope, x3)
+    expected = 6
+    assert answer == expected
 
 def test_line_checker():
     from xy_calculator import line_checker
