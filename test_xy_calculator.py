@@ -1,4 +1,4 @@
-def_test_xy_analysis():
+def test_xy_analysis():
     from xy_calculator import xy_analysis
     first_coordinates = (1,1)
     second_coordinates = (2,2)
