@@ -17,8 +17,8 @@ def slope_calculator(first_coordinates, second_coordinates):
     return x1, y1, slope
 
 def xy_analysis(x1, y1, slope, x3):
-	y3 = (slope * (x3 - x1)) + y1
-	return y3
+    y3 = (slope * (x3 - x1)) + y1
+    return y3
 
 first_coordinates, second_coordinates, third_coordinates = xy_input()
 x1, y1, slope = slope_calculator(first_coordinates, second_coordinates)
