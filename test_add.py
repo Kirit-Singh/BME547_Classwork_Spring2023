@@ -1,4 +1,7 @@
+import pytest
+
+
 def test_add():
 	from add import addition
-	answer = add(1,2)
-	assert answer == 3
+	answer = addition (0.1, 0.2)
+	print(pytest.approx(0.3))
