@@ -7,6 +7,14 @@ class Patient:
         self.age = 0
         self.tests = []
 
+    def get_full_name(self):
+        full_name = "{} {}".format(self.first_name,
+                                   self.last_name)
+        age = 15
+        print(age)
+        print(self.age)
+        return full_name
+
 
 def main():
     new_patient = Patient()
@@ -19,6 +27,7 @@ def main():
     print(new_patient.first_name)
     print(new_patient.last_name)
     print(new_patient.tests)
+    print(new_patient.get_full_name())
     print(second_patient.first_name)
 
 
