@@ -2,13 +2,14 @@ def my_function():
     # creates an error
     a = 50
     b = 0
-    try: 
-    	c = a/b
-    except ZeroDivisionError:
-        print("Attempting to divide by zero, please enter non-zero value")
-        b = float(input("Enter b: "))
-        c = a/b  
-    return c
+    while True:
+	    try: 
+	        c = a/b
+	    except ZeroDivisionError:
+	        print("Attempting to divide by zero, please enter non-zero value")
+	        b = float(input("Enter b: "))
+	    else:
+	        return c
     
 
 def main():
