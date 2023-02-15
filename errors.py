@@ -13,6 +13,11 @@ def my_function():
         except ZeroDivisionError:
             print("Attempting to divide by zero, please enter non-zero value")
             b = float(input("Enter b: "))
+        # Bad error generally as no interface. However useful
+        # if continues to run where we dont want a crash
+        # (e.g., medical equipment)
+        # except:
+            # print("All errors")
         else:
             return c
 
