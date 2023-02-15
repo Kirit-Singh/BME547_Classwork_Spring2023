@@ -1,6 +1,17 @@
-a = "The sky is blue"
-print(a)
+def my_function():
+    # creates an error
+    a = 50
+    b = 0
+    c = a/b
+    return c
 
 
-for letter in a
-    print(letxter)
+def main():
+    c = my_function()
+    d = 100
+    e = d/c
+    return e
+
+
+if __name__ == "__main__":
+    print(main())
