@@ -11,13 +11,16 @@ def create_person():
 
 
 def output_json(my_dict):
-    filename = "patient.json"
+    filename = "my_booleans.json"
     out_file = open(filename, 'w')
     json.dump(my_dict, out_file)
     out_file.close()
 
 
+def create_list():
+    return [True, False, True]
+
+
 if __name__ == "__main__":
-    person = create_person()
-    print(person)
-    output_json(person)
+    data_to_output = create_list()
+    output_json(data_to_output)
