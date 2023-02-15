@@ -7,8 +7,8 @@ def my_function():
             if b == 0:
                 raise ValueError("You cannot enter 0 for b")
             c = a/b
-        except ValueError as ve:
-            print(ve)
+        except ValueError as value_error:
+            print(value_error)
             b = float(input("Enter b: "))
         except ZeroDivisionError:
             print("Attempting to divide by zero, please enter non-zero value")
