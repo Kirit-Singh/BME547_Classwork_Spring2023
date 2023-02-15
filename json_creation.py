@@ -17,6 +17,13 @@ def output_json(my_dict):
     out_file.close()
 
 
+def output_json_with(output_data):
+    filename = "my_output.txt"
+    with open(filename, 'w') as out_file:
+        json.dump(output_data, out_file)
+    print("The output is finished")
+
+
 def create_list():
     return [True, False, True]
 
