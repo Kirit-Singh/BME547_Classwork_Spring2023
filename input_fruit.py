@@ -1,0 +1,1 @@
+in_file = open("input_data.txt", "r")
