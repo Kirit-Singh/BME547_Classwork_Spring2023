@@ -9,7 +9,7 @@ def input_json(filename):
 
 
 if __name__ == "__main__":
-    filename = "patient.json"
+    filename = "my_booleans.json"
     x = input_json(filename)
     print(x)
     print(type(x))
