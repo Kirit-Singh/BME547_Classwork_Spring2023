@@ -4,7 +4,12 @@ def my_function():
     b = 0
     while True:
         try:
+            if b == 0:
+                raise ValueError("You cannot enter 0 for b")
             c = a/b
+        except ValueError as ve:
+            print(ve)
+            b = float(input("Enter b: "))
         except ZeroDivisionError:
             print("Attempting to divide by zero, please enter non-zero value")
             b = float(input("Enter b: "))
