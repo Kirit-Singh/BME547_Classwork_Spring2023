@@ -25,4 +25,5 @@ def main():
 
 
 if __name__ == "__main__":
-    print(main())
+    e_value = main()
+    print(e_value)
