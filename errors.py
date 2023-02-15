@@ -3,14 +3,14 @@ def my_function():
     a = 50
     b = 0
     while True:
-	    try: 
-	        c = a/b
-	    except ZeroDivisionError:
-	        print("Attempting to divide by zero, please enter non-zero value")
-	        b = float(input("Enter b: "))
-	    else:
-	        return c
-    
+        try:
+            c = a/b
+        except ZeroDivisionError:
+            print("Attempting to divide by zero, please enter non-zero value")
+            b = float(input("Enter b: "))
+        else:
+            return c
+
 
 def main():
     c = my_function()
