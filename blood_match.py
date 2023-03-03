@@ -3,6 +3,7 @@ import requests
 
 server = "http://vcm-7631.vm.duke.edu:5002"
 
+
 patient_IDs = requests.get(server + "/get_patients/ks625")
 print(patient_IDs.text)
 
