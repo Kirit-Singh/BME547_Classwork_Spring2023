@@ -1,5 +1,6 @@
 __pycache__
 .RHistory
 .ipynb_checkpoints
+.pytest_cache
 newvenv/
 debug_class/
