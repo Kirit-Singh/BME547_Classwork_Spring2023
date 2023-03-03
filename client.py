@@ -15,9 +15,16 @@ print(r.status_code)
 print(r.text)
 
 
-out_data = {"a": 2, "b": 3}
+r = requests.get(server + "/add_two/five/26")
+print(r.status_code)
+print(r.text)
+print(r.json())
+
+
+out_data = {"a": 2, "b": -3}
 r = requests.post(server + "/add", json=out_data)
 print(r.status_code)
 print(r.text)
-x = r.json()
-print(x + 2)
+if r.status_code == 200:
+    x = r.json()
+    print(x + 2)

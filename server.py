@@ -31,6 +31,14 @@ def HDL_route_handler():
 def add_numbers():
     in_data = request.get_json()
     answer = in_data["a"] + in_data["b"]
+    if answer < 0:
+        return "The answer was less than zero. BAD", 400
+    return jsonify(answer)
+
+
+@app.route("/add_two/<a>/<b>", methods=["GET"])
+def add_two_handlers(a, b):
+    answer = int(a) + int(b)
     return jsonify(answer)
 
 
