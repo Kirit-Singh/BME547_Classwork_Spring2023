@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+
 """
 Database = Dictionary
 keys -> ids for the patients
@@ -8,9 +9,7 @@ value: int
  2: {"id"}
 """
 
-
 db = {}
-
 
 app = Flask(__name__)
 
@@ -37,6 +36,7 @@ def post_new_patient():
     # Call other functions to do the work
     # Return a response
     return jsonify(answer), status_code
+
 
 def new_patient_driver(in_data):
     # Validate input
@@ -75,7 +75,7 @@ def validate_input_data_add_test(in_data):
     return True
 
 
-@app.route("/add_test", methods = ["POST"])
+@app.route("/add_test", methods=["POST"])
 def post_add_test():
     in_data = request.get_json()
     answer, status_code = add_test_driver(in_data)
@@ -88,19 +88,19 @@ def does_patient_exist_in_db(id):
     else:
         return False
 
+
 def add_test_driver(in_data):
     validation = validate_input_data_add_test(in_data)
     if validation is not True:
         return validation, 400
     does_id_exist = does_patient_exist_in_db(in_data["id"])
     if does_id_exist is False:
-        return "Patient id {} does not exist in database".format\
-               (in_data["id"]), 400
-    add_test_to_db(in_data["id"], in_data ["test_name"],
+        return "Patient id {} does not exist in database".\
+                format(in_data["id"]), 400
+    add_test_to_db(in_data["id"], in_data["test_name"],
                    in_data["test_result"])
     return "Test successfully added", 200
 
 
-if __name__=="__main__":
-	app.run()
-
+if __name__ == "__main__":
+    app.run()
