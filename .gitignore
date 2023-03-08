@@ -4,3 +4,7 @@ __pycache__
 .pytest_cache
 newvenv/
 debug_class/
+.idea/.name
+.idea/BME547_Classwork_Spring2023.iml
+.idea/misc.xml
+/.idea/
