@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+import logging
 
 """
 Database Description: A dictionary of dictionaries.
@@ -258,4 +259,5 @@ def validate_patient_id_from_get(patient_id):
 
 
 if __name__ == "__main__":
+    logging.basicConfig(filename="server.log", filemode="w")
     app.run()
