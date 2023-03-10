@@ -245,6 +245,7 @@ def get_results_driver(patient_id):
     patient = db[int(patient_id)]
     return patient["tests"], 200
 
+
 def validate_patient_id_from_get(patient_id):
     try:
         patient_num = int(patient_id)
