@@ -18,4 +18,3 @@ def test_add_test_to_db():
     expected = (test_name, test_value)
     db.clear()
     assert answer == expected
-
