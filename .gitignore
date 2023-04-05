@@ -8,3 +8,5 @@ debug_class/
 .idea/BME547_Classwork_Spring2023.iml
 .idea/misc.xml
 /.idea/
+server.log
+virtualenv/
